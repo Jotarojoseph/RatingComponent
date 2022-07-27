@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&family=Overpass:wght@300&family=Roboto:wght@500&display=swap');
+
+*{
+    font-family: 'Overpass';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(216, 12%, 8%);
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__box {
+    width: 25%;
+    height: 25vw;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    padding: 17px;
+    display: flex;
+}
+
+.box__text{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box__img {
+    display: flex;
+    background-color: hsl(217, 10%, 30%);
+    width: 12%;
+    height: 13%;
+    padding: 4%;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.title h1{
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+    
+} 
+
+.heading{
+   font-size: 15px;
+   color: hsl(217, 12%, 63%);
+   letter-spacing: 1px;
+}
+
+.box__numbers {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box__numbers input {
+    border: none;
+    display: flex;
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(217, 10%, 30%);
+    width: 12%;
+    padding: 3%;
+    border-radius: 50%;
+    justify-content: center;
+    transition: ease-in-out 0.5s; 
+}
+
+.box__numbers input:hover{
+
+    cursor:pointer;
+    display: flex;
+    color: hsl(217, 10%, 30%);
+    background-color: hsl(217, 12%, 63%);
+    width: 12%;
+    padding: 3%;
+    border-radius: 50px;
+    justify-content: center;
+    
+}
+
+.box__numbers input:active{
+
+    cursor:pointer;
+    display: flex;
+    color: hsl(217, 10%, 30%);
+    background-color: hsl(25, 97%, 53%);
+    width: 12%;
+    padding: 3%;
+    border-radius: 50px;
+    justify-content: center;
+
+}
+
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.submit{
+    color: white;
+    text-transform: uppercase;
+    border: hsl(216, 12%, 8%) 1px solid ; 
+    background-color: hsl(25, 97%, 53%);
+    padding: 3%;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+    transition:ease-in-out 0.8s;
+    letter-spacing: 1px;
+}
+
+.submit button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+
+
+@media  screen and (min-width: 1200px) {
+
+    .container__box{
+        width: 30%;
+        height:60%;    
+        }
+     
+}
+
+@media  screen and (max-width: 1080px) {
+
+    .container__box{
+        width: 50%;
+        height:50%;
+        
+        }
+    .heading{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 200px){
+    .container__box {
+    width: 80%;
+    height: 50%;
+}
+}
+@media screen and (max-width: 400px){
+
+.container__box {
+    width: 80%;
+   height: 50%;
+}
+}
+
+@media screen and (max-width: 600px){
+
+    .container__box {
+      width: 80%;
+      height: 50%;
+} 
+}
+@media screen and (max-width: 400px){
+
+    .container__box {
+    width: 80%;
+    height: 50%;
+}   
+}    
+
+
+
+.ratemessage{
+    display: none;
+  }
+
+  .sec-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rate-cont{
+    background-color: #28333A;
+    color:#FC7613;
+    width: 70%;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 25px;
+    font-weight: 400;
+    margin:  20px 0;
+  }
